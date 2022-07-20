@@ -2,32 +2,28 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 56px 148px 92px 148px;
+  padding: 56px 148px 0 148px;
   margin: 0;
-  max-height: 1005px;
+  min-height: 1005px;
   box-sizing: border-box;
-
 }
 
 @media screen and (max-width: 1024px) {
   .lead {
-    max-height: 962px;
+    min-height: 962px;
     padding: 48px 48px 92px 48px;
   }
 }
-  @media screen and (max-width: 768px) {
-    .lead {
-      max-height: 862px;
-      padding: 48px 0 88px 0;
-    }
+@media screen and (max-width: 768px) {
+  .lead {
+    min-height: 862px;
+    padding: 48px 0 88px 0;
+  }
 }
 
 @media screen and (max-width: 320px) {
   .lead {
-    max-height: 406px;
+    min-height: 406px;
     padding: 48px 0px 64px 0px;
   }
 }
-
-
-
