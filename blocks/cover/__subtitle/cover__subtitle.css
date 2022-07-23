@@ -10,9 +10,28 @@
   white-space: pre-line;
 }
 
+.cover__subtitle:first-of-type {
+  display: none;
+}
+.cover__subtitle:last-of-type {
+  display: block;
+}
+
 @media screen and (max-width: 320px) {
   .cover__subtitle {
     font-size: 14px;
     line-height: 16px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cover__subtitle:first-of-type {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cover__subtitle:last-of-type {
+    display: none;
   }
 }
