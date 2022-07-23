@@ -1,11 +1,9 @@
 .place {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr) minmax(min-content, max-content);
+  grid-template-rows: repeat(2, 1fr) minmax(min-content, max-content);
   justify-items: start;
   align-items: end;
-  grid-template-columns: minmax(min-content, max-content);
-  grid-template-rows: minmax(min-content, max-content);
   grid-template-areas:
     "title website"
     "image paragraphs";
