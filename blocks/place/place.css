@@ -9,6 +9,7 @@
     "image paragraphs";
   padding: 0 0 80px;
   column-gap: 40px;
+  box-sizing: border-box;
 }
 
 .place:last-of-type {
@@ -24,6 +25,31 @@
 @media screen and (max-width: 768px) {
   .place {
     column-gap: 28px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .place {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    grid-template-areas:
+      "title"
+      "website"
+      "image"
+      "paragraphs";
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .place {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "title"
+      "website"
+      "image"
+      "paragraphs";
   }
 }
 

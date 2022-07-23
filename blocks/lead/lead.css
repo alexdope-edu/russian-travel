@@ -21,6 +21,13 @@
   }
 }
 
+@media screen and (max-width: 414px) {
+  .lead {
+    min-height: 406px;
+    padding: 48px 0px 64px 0px;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .lead {
     min-height: 406px;

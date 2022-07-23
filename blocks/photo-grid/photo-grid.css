@@ -1,16 +1,17 @@
 .photo-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, minmax(min-content, max-content));
+  grid-template-rows: repeat(3, minmax(min-content, max-content));
   gap: 16px;
   padding: 92px 48px 0 48px;
   min-height: 671px;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 1024px) {
   .photo-grid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, minmax(min-content, max-content));
+    grid-template-rows: repeat(4, minmax(min-content, max-content));
     gap: 14px;
     min-height: 942px;
   }
@@ -18,8 +19,8 @@
 
 @media screen and (max-width: 768px) {
   .photo-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(2, minmax(min-content, max-content));
+    grid-template-rows: repeat(6, minmax(min-content, max-content));
     gap: 16px;
     min-height: 1664px;
     padding: 88px 24px 0;
@@ -28,18 +29,28 @@
 
 @media screen and (max-width: 688px) {
   .photo-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(2, minmax(min-content, max-content));
+    grid-template-rows: repeat(6, minmax(min-content, max-content));
     gap: 16px;
     min-height: 1664px;
     padding: 88px 24px 0;
   }
 }
 
+@media screen and (max-width: 414px) {
+  .photo-grid {
+    grid-template-columns: repeat(1, minmax(min-content, max-content));
+    grid-template-rows: repeat(12, minmax(min-content, max-content));
+    gap: 12px;
+    min-height: 2724px;
+    padding: 64px 16px 0;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .photo-grid {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(1, minmax(min-content, max-content));
+    grid-template-rows: repeat(12, minmax(min-content, max-content));
     gap: 12px;
     min-height: 2724px;
     padding: 64px 16px 0;
