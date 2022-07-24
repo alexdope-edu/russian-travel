@@ -1,4 +1,4 @@
-.place__paragraph {
+.places__paragraph {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -7,12 +7,12 @@
   color: #ffffff;
   margin: 0;
 }
-.place__paragraph:first-of-type {
+.places__paragraph:first-of-type {
   margin: 0 0 26px 0;
 }
 
 @media screen and (max-width: 768px) {
-  .place__paragraph {
+  .places__paragraph {
     font-size: 16px;
     line-height: 26px;
   }

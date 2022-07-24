@@ -11,6 +11,16 @@
   }
 }
 
+@media screen and (max-width: 720px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-content: space-between;
+    padding: 64px 118px 24px 16px;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .footer {
     display: flex;
