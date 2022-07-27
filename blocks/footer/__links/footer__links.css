@@ -4,33 +4,16 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  transition: opacity 1s ease;
+}
+
+.footer__links:hover {
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 720px) {
   .footer__links {
-    display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    gap: 32px;
-    margin: 0 0 48px;
-  }
-}
-
-@media screen and (max-width: 414px) {
-  .footer__links {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 32px;
-    margin: 0 0 48px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .footer__links {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     gap: 32px;
     margin: 0 0 48px;
   }
