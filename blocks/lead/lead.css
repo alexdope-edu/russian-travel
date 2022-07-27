@@ -4,33 +4,23 @@
   align-items: center;
   padding: 56px 148px 0 148px;
   margin: 0;
-  min-height: 1005px;
   box-sizing: border-box;
 }
 
 @media screen and (max-width: 1024px) {
   .lead {
-    min-height: 962px;
-    padding: 48px 48px 92px 48px;
+    padding: 48px 48px 0 48px;
   }
 }
+
 @media screen and (max-width: 768px) {
   .lead {
-    min-height: 862px;
-    padding: 48px 0 88px 0;
+    padding: 48px 0 0;
   }
 }
 
 @media screen and (max-width: 414px) {
   .lead {
-    min-height: 406px;
-    padding: 48px 0px 64px 0px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .lead {
-    min-height: 406px;
-    padding: 48px 0px 64px 0px;
+    padding: 48px 0 0;
   }
 }

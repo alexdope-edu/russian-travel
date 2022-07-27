@@ -8,7 +8,7 @@
   background-size: cover;
   background-position: center;
   box-sizing: border-box;
-  padding: 245px 312px;
+  min-height: 740px;
   text-decoration: none;
   color: #fff;
   z-index: 0;
@@ -34,21 +34,18 @@
 
 @media screen and (max-width: 1024px) {
   .cover__link {
-    padding: 195px 232px;
     min-height: 640px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .cover__link {
-    padding: 115px 104px;
     min-height: 480px;
   }
 }
 
 @media screen and (max-width: 320px) {
   .cover__link {
-    padding: 33px 16px;
     min-height: 200px;
   }
 }

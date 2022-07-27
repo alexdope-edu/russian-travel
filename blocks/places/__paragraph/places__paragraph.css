@@ -1,5 +1,5 @@
 .places__paragraph {
-  font-family: "Inter";
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -9,6 +9,10 @@
 }
 .places__paragraph:first-of-type {
   margin: 0 0 26px 0;
+}
+
+.places__paragraph:first-of-type:last-child {
+  margin: 0;
 }
 
 @media screen and (max-width: 768px) {
