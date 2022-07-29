@@ -1,0 +1,11 @@
+@media screen and (max-width: 768px) {
+  .places__title_transfer {
+    white-space: pre-line;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .places__title_transfer {
+    white-space: nowrap;
+  }
+}
